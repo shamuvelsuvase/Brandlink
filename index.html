@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrandLink | The Future of Brand-Influencer Collaborations</title>
+  <meta name="description" content="BrandLink connects Indian brands with nano and micro influencers seamlessly — no agencies, no chaos. Match, talk, and launch campaigns in one place.">
+  <meta name="theme-color" content="#05050f">
+
+  <!-- Modular CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Canvas particle background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ═══════════════════════════════════════
+       LANDING PAGE
+  ════════════════════════════════════════ -->
+  <div id="landing-page">
+
+    <header id="header">
+      <div class="nav-container">
+        <a href="#" class="logo" id="logo-home">
+          <div class="logo-icon"></div>BrandLink
+        </a>
+        <nav class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it Works</a>
+          <a href="#reviews">Reviews</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="btn btn-secondary" id="nav-login-btn" style="padding:.55rem 1.4rem">Login</button>
+          <button class="btn btn-primary"   id="nav-signup-btn">Get Started</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#features"      class="mobile-link">Features</a>
+        <a href="#how-it-works"  class="mobile-link">How it Works</a>
+        <a href="#reviews"       class="mobile-link">Reviews</a>
+        <button class="btn btn-primary mobile-cta" id="mobile-cta">Get Started</button>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ── Hero ── -->
+      <section class="hero">
+        <div class="hero-content reveal">
+          <div class="badge-hero"><i class="fa-solid fa-bolt"></i> Collaboration, Rewired</div>
+          <h1>The Bridge of<br><span class="text-gradient">Brand &amp; Influencer</span><br>Collaborations.</h1>
+          <p class="hero-desc">BrandLink matches Indian brands with nano and micro creators who fit their audience and budget — without agencies in the middle.</p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num" data-target="8500">0</span><span class="stat-unit">+</span>
+              <span class="stat-label">Creators</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="2100">0</span><span class="stat-unit">+</span>
+              <span class="stat-label">Brands</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="96">0</span><span class="stat-unit">%</span>
+              <span class="stat-label">Match Rate</span>
+            </div>
+          </div>
+          <div class="hero-btns">
+            <button class="btn btn-primary btn-glow btn-lg" id="hero-cta">Get Started <i class="fa-solid fa-arrow-right"></i></button>
+            <a href="#features" class="btn btn-secondary btn-lg">Explore Features</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" style="transition-delay:.25s">
+          <div class="hero-card-stack">
+            <div class="floating-card card-brand glass">
+              <div class="fc-avatar brand-av"><i class="fa-solid fa-building-columns"></i></div>
+              <div class="fc-info">
+                <strong>Mamaearth</strong>
+                <span>Beauty · $250–$900</span>
+              </div>
+              <div class="fc-badge matched">Matched</div>
+            </div>
+            <div class="floating-card card-influencer glass">
+              <div class="fc-avatar inf-av"><i class="fa-solid fa-star"></i></div>
+              <div class="fc-info">
+                <strong>Priya Sharma</strong>
+                <span>9.8K followers · Delhi</span>
+              </div>
+              <div class="fc-badge collab">Collab Active</div>
+            </div>
+            <div class="floating-card card-deal glass">
+              <i class="fa-solid fa-handshake deal-icon"></i>
+              <span>Deal closed in <strong>2 days</strong></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Features ── -->
+      <section id="features" class="features">
+        <div class="section-label reveal">What We Do</div>
+        <h2 class="section-title reveal" style="transition-delay:.1s">Three pillars of<br><span class="text-gradient">smart partnership</span></h2>
+        <p class="section-sub reveal" style="transition-delay:.2s">Infrastructure that makes brand-creator collaborations fast, transparent, and fair.</p>
+
+        <div class="features-grid">
+          <div class="feature-card glass reveal" style="transition-delay:.1s">
+            <div class="feature-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+            <h3>Smart Matching</h3>
+            <p>Our engine reads niche, audience demographics and engagement to surface Indian nano &amp; micro creators that actually convert for your brand.</p>
+            <div class="feature-line"></div>
+          </div>
+          <div class="feature-card glass reveal" style="transition-delay:.2s">
+            <div class="feature-icon"><i class="fa-regular fa-comments"></i></div>
+            <h3>Direct Chat</h3>
+            <p>No agencies, no email chains. Negotiate briefs, deliverables and timelines in one threaded workspace — in English or Hindi.</p>
+            <div class="feature-line"></div>
+          </div>
+          <div class="feature-card glass reveal" style="transition-delay:.3s">
+            <div class="feature-icon"><i class="fa-solid fa-wallet"></i></div>
+            <h3>Transparent Budgets</h3>
+            <p>Filter by real rate ranges upfront so both sides only talk to collaborations they can actually afford — no awkward money talks.</p>
+            <div class="feature-line"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── How it Works ── -->
+      <section id="how-it-works" class="how-it-works">
+        <div class="section-label reveal">How it Works</div>
+        <h2 class="section-title reveal" style="transition-delay:.1s">Three steps to<br><span class="text-gradient">your next deal</span></h2>
+        <div class="steps-grid">
+          <div class="step-card reveal" style="transition-delay:.1s">
+            <div class="step-number">01</div>
+            <h3>Create your profile</h3>
+            <p>Sign up as a brand or influencer, fill in your niche, budget and goals in under 2 minutes.</p>
+          </div>
+          <div class="step-connector reveal" style="transition-delay:.15s"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="step-card reveal" style="transition-delay:.2s">
+            <div class="step-number">02</div>
+            <h3>Get matched</h3>
+            <p>Browse curated matches, filter by niche, follower size or budget, and shortlist who you want to work with.</p>
+          </div>
+          <div class="step-connector reveal" style="transition-delay:.25s"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="step-card reveal" style="transition-delay:.3s">
+            <div class="step-number">03</div>
+            <h3>Launch &amp; grow</h3>
+            <p>Chat directly, agree on terms, and launch your campaign — all within BrandLink. No middlemen.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Testimonials ── -->
+      <section id="reviews" class="testimonials">
+        <div class="section-label reveal">Testimonials</div>
+        <h2 class="section-title reveal" style="transition-delay:.1s">Trusted by <span class="text-gradient">both sides</span></h2>
+        <p class="section-sub reveal" style="transition-delay:.2s">Indian brands and creators on what changed for them.</p>
+        <div class="testimonials-grid">
+          <div class="testimonial-card glass reveal" style="transition-delay:.1s">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"We found four micro-creators in Mumbai in one week. The budget filter saved us so many dead-end calls with overpriced influencers."</p>
+            <div class="author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#11998e,#38ef7d)">SR</div>
+              <div class="author-info">
+                <h4>Shruti Rajan</h4>
+                <p>Brand Manager, Mamaearth</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass reveal" style="transition-delay:.2s">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"Brands on BrandLink already know my rate per post. Every conversation starts serious — no more lowball DMs."</p>
+            <div class="author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#f7971e,#ffd200)">AJ</div>
+              <div class="author-info">
+                <h4>Aditya Joshi</h4>
+                <p>Lifestyle Creator · Indore · 10.6K</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass reveal" style="transition-delay:.3s">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"The matching quality is incredible. It feels like a scout who actually understands our brand voice and Indian audience."</p>
+            <div class="author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#4facfe,#00f2fe)">RK</div>
+              <div class="author-info">
+                <h4>Rahul Khanna</h4>
+                <p>Growth Lead, Noise Wearables</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass reveal" style="transition-delay:.4s">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"Direct chat replaced my entire email chaos. I closed two brand deals in 3 days — something that used to take months."</p>
+            <div class="author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#ee0979,#ff6a00)">SK</div>
+              <div class="author-info">
+                <h4>Sneha Kapoor</h4>
+                <p>Beauty Creator · Chandigarh · 14.5K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CTA Banner ── -->
+      <section class="cta-banner reveal">
+        <div class="cta-glow"></div>
+        <h2>Ready to find your perfect match?</h2>
+        <p>Join 10,000+ Indian brands and creators already on BrandLink.</p>
+        <button class="btn btn-primary btn-glow btn-lg" id="cta-bottom">Start for Free <i class="fa-solid fa-rocket"></i></button>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="logo">
+          <div class="logo-icon"></div>BrandLink
+        </div>
+        <div class="footer-links">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Contact</a>
+          <a href="#">Blog</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 BrandLink. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div><!-- /landing-page -->
+
+  <!-- ═══════════════════════════════════════
+       AUTH MODAL
+  ════════════════════════════════════════ -->
+  <div class="modal-overlay" id="auth-overlay" role="dialog" aria-modal="true" aria-label="BrandLink Access">
+    <div class="auth-modal glass" id="auth-modal">
+      <button class="modal-close" id="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+
+      <!-- Step 1: Choose role -->
+      <div class="auth-step" id="step-choose">
+        <div class="modal-eyebrow"><i class="fa-solid fa-link"></i> BRANDLINK ACCESS</div>
+        <h2 class="modal-title">How do you want<br>to continue?</h2>
+        <div class="role-cards">
+          <button class="role-card" id="choose-brand">
+            <div class="role-icon brand-icon"><i class="fa-solid fa-building-columns"></i></div>
+            <strong>Continue as a Brand</strong>
+            <p>Discover vetted Indian creators, filter by budget and niche, and launch campaigns.</p>
+          </button>
+          <button class="role-card" id="choose-influencer">
+            <div class="role-icon inf-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+            <strong>Continue as an Influencer</strong>
+            <p>Get matched with Indian brands that fit your audience, niche and your rates.</p>
+          </button>
+        </div>
+        <p class="modal-footer-text">Already have an account? <button class="link-btn" id="already-login">Log in</button></p>
+      </div>
+
+      <!-- Step 2: Auth form -->
+      <div class="auth-step hidden" id="step-form">
+        <div class="modal-eyebrow" id="form-eyebrow"><i class="fa-solid fa-link"></i> BRANDLINK ACCESS</div>
+        <h2 class="modal-title" id="form-title">Create your account</h2>
+        <p class="modal-subtitle" id="form-subtitle">Tell us who you are — we'll tune your matches from day one.</p>
+
+        <div class="auth-tabs">
+          <button class="auth-tab" id="tab-login">Log in</button>
+          <button class="auth-tab active" id="tab-signup">Sign up</button>
+        </div>
+
+        <div class="form-role-selector" id="form-role-selector">
+          <button class="form-role-btn" id="frole-influencer"><i class="fa-solid fa-user-astronaut"></i> I'm an Influencer</button>
+          <button class="form-role-btn active" id="frole-brand"><i class="fa-solid fa-building-columns"></i> I'm a Brand</button>
+        </div>
+
+        <form id="auth-form" novalidate>
+          <!-- Common -->
+          <div class="form-group">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" class="form-input" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="f-password">Password</label>
+            <div class="input-wrap">
+              <input type="password" id="f-password" class="form-input" placeholder="••••••••••" required>
+              <button type="button" class="toggle-pw" id="toggle-pw" aria-label="Show/hide password">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Brand fields -->
+          <div id="brand-fields">
+            <div class="form-group">
+              <label for="f-company">Company / Brand name</label>
+              <input type="text" id="f-company" class="form-input" placeholder="e.g. Mamaearth">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-niche">Industry / Niche</label>
+                <select id="f-niche" class="form-input form-select">
+                  <option value="">Select niche</option>
+                  <option>Tech</option><option>Fashion</option><option>Beauty &amp; Skincare</option>
+                  <option>Food &amp; Beverage</option><option>Health &amp; Fitness</option>
+                  <option>Travel</option><option>Gaming</option><option>Finance</option>
+                  <option>Education</option><option>Lifestyle</option><option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="f-location">Location</label>
+                <input type="text" id="f-location" class="form-input" placeholder="Mumbai, Maharashtra">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-budget-min">Campaign budget from ($)</label>
+                <input type="number" id="f-budget-min" class="form-input" placeholder="200" min="0">
+              </div>
+              <div class="form-group">
+                <label for="f-budget-max">Campaign budget up to ($)</label>
+                <input type="number" id="f-budget-max" class="form-input" placeholder="1500" min="0">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="f-campaign-needs">Campaign needs</label>
+              <textarea id="f-campaign-needs" class="form-input form-textarea" placeholder="e.g. Skincare tutorial creators for our new serum launch." rows="2"></textarea>
+            </div>
+          </div>
+
+          <!-- Influencer fields -->
+          <div id="influencer-fields" class="hidden">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-fullname">Full name</label>
+                <input type="text" id="f-fullname" class="form-input" placeholder="Priya Sharma">
+              </div>
+              <div class="form-group">
+                <label for="f-handle">Instagram / handle</label>
+                <input type="text" id="f-handle" class="form-input" placeholder="@priya.creates">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-platform">Primary platform</label>
+                <select id="f-platform" class="form-input form-select">
+                  <option value="">Select platform</option>
+                  <option>Instagram</option><option>YouTube</option><option>TikTok / Reels</option>
+                  <option>Twitter / X</option><option>LinkedIn</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="f-followers">Follower count</label>
+                <select id="f-followers" class="form-input form-select">
+                  <option value="">Select range</option>
+                  <option>Under 5K (Nano)</option>
+                  <option>5K – 10K (Nano)</option>
+                  <option>10K – 20K (Micro)</option>
+                  <option>20K – 50K (Micro)</option>
+                  <option>50K+ (Mid-tier)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-content-niche">Content niche</label>
+                <select id="f-content-niche" class="form-input form-select">
+                  <option value="">Select niche</option>
+                  <option>Lifestyle</option><option>Beauty &amp; Skincare</option><option>Fashion</option>
+                  <option>Tech &amp; Gadgets</option><option>Food &amp; Cooking</option>
+                  <option>Travel &amp; Adventure</option><option>Fitness &amp; Health</option>
+                  <option>Gaming</option><option>Finance &amp; Business</option><option>Education</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="f-rate">Rate per post ($)</label>
+                <input type="number" id="f-rate" class="form-input" placeholder="75" min="0">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="f-bio">Short bio</label>
+              <textarea id="f-bio" class="form-input form-textarea" placeholder="Lifestyle creator based in Delhi, helping brands tell authentic stories." rows="2"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-glow btn-full" id="form-submit-btn">
+            <i class="fa-solid fa-building-columns"></i> Create brand account
+          </button>
+        </form>
+
+        <p class="modal-footer-text" id="form-switch-text">
+          Already have an account? <button class="link-btn" id="form-switch-btn">Log in</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       BRAND DASHBOARD
+  ════════════════════════════════════════ -->
+  <div id="brand-dashboard" class="dashboard hidden">
+    <aside class="sidebar">
+      <div class="sidebar-logo"><div class="logo-icon"></div> BrandLink</div>
+      <nav class="sidebar-nav">
+        <a href="#" class="sidebar-link active"><i class="fa-solid fa-compass"></i> <span>Discover</span></a>
+        <a href="#" class="sidebar-link"><i class="fa-solid fa-rocket"></i> <span>Campaigns</span> <span class="sidebar-badge">3</span></a>
+        <a href="#" class="sidebar-link"><i class="fa-regular fa-comments"></i> <span>Messages</span></a>
+        <a href="#" class="sidebar-link"><i class="fa-solid fa-gear"></i> <span>Settings</span></a>
+      </nav>
+      <button class="sidebar-logout" id="brand-logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+    </aside>
+    <div class="dash-main">
+      <div class="dash-header">
+        <div>
+          <h2 class="dash-greeting" id="brand-greeting">Welcome, BrandLink 👋</h2>
+          <p class="dash-sub">Discover Indian influencers ready to amplify your brand.</p>
+        </div>
+        <div class="dash-header-actions">
+          <div class="dash-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search by name, niche, city…" id="influencer-search">
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <div class="filter-group">
+          <label>Platform</label>
+          <select class="filter-select" id="filter-platform">
+            <option value="">All Platforms</option>
+            <option>Instagram</option><option>YouTube</option><option>TikTok / Reels</option><option>Twitter / X</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Niche</label>
+          <select class="filter-select" id="filter-niche">
+            <option value="">All Niches</option>
+            <option>Lifestyle</option><option>Fashion</option><option>Beauty &amp; Skincare</option>
+            <option>Tech &amp; Gadgets</option><option>Food &amp; Cooking</option>
+            <option>Travel &amp; Adventure</option><option>Fitness &amp; Health</option><option>Gaming</option>
+            <option>Finance &amp; Business</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Followers</label>
+          <select class="filter-select" id="filter-followers">
+            <option value="">Any Size</option>
+            <option>Under 5K</option><option>5K – 10K</option><option>10K – 15K</option><option>15K – 20K</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="profiles-grid" id="influencer-grid"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       INFLUENCER DASHBOARD
+  ════════════════════════════════════════ -->
+  <div id="influencer-dashboard" class="dashboard hidden">
+    <aside class="sidebar">
+      <div class="sidebar-logo"><div class="logo-icon"></div> BrandLink</div>
+      <nav class="sidebar-nav">
+        <a href="#" class="sidebar-link active"><i class="fa-solid fa-compass"></i> <span>Discover Brands</span></a>
+        <a href="#" class="sidebar-link"><i class="fa-solid fa-rocket"></i> <span>Campaigns</span></a>
+        <a href="#" class="sidebar-link"><i class="fa-regular fa-comments"></i> <span>Messages</span> <span class="sidebar-badge">2</span></a>
+        <a href="#" class="sidebar-link"><i class="fa-solid fa-gear"></i> <span>Settings</span></a>
+      </nav>
+      <button class="sidebar-logout" id="influencer-logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+    </aside>
+    <div class="dash-main">
+      <div class="dash-header">
+        <div>
+          <h2 class="dash-greeting" id="influencer-greeting">Welcome, Creator 👋</h2>
+          <p class="dash-sub">Explore Indian brands looking for creators like you.</p>
+        </div>
+        <div class="dash-header-actions">
+          <div class="dash-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search brands…" id="brand-search">
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <div class="filter-group">
+          <label>Niche</label>
+          <select class="filter-select" id="filter-brand-niche">
+            <option value="">All Niches</option>
+            <option>Tech</option><option>Fashion</option><option>Beauty &amp; Skincare</option>
+            <option>Food &amp; Beverage</option><option>Health &amp; Fitness</option>
+            <option>Travel</option><option>Gaming</option><option>Finance</option><option>Education</option><option>Lifestyle</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Budget</label>
+          <select class="filter-select" id="filter-budget">
+            <option value="">Any Budget</option>
+            <option>Under $300</option><option>$300 – $800</option><option>$800 – $1,500</option><option>$1,500+</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="profiles-grid" id="brand-grid"></div>
+    </div>
+  </div>
+
+  <!-- Connect Modal -->
+  <div class="modal-overlay" id="connect-overlay">
+    <div class="connect-modal glass" id="connect-modal">
+      <button class="modal-close" id="connect-close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="connect-header">
+        <div class="connect-avatar" id="connect-avatar"></div>
+        <div>
+          <h3 id="connect-name">Brand Name</h3>
+          <p id="connect-role">Niche · Location</p>
+        </div>
+      </div>
+      <p class="connect-prompt">Send a collaboration request or a quick message to kick things off.</p>
+      <textarea class="form-input form-textarea" id="connect-message"
+        placeholder="Hey! I love what you're doing and think we'd be a perfect fit for our upcoming campaign…" rows="4"></textarea>
+      <div class="connect-actions">
+        <button class="btn btn-secondary" id="connect-cancel">Cancel</button>
+        <button class="btn btn-primary btn-glow" id="connect-send"><i class="fa-solid fa-paper-plane"></i> Send Request</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="alert">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-msg">Request sent!</span>
+  </div>
+
+  <!-- ES Module entry point -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
